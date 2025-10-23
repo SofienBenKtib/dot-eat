@@ -11,7 +11,7 @@ namespace doteat.Models
         public int Stock { get; set; }
         public int CategoryId { get; set; }
         [NotMapped]
-        public IFormFile ImageFile { get; set; }
+        public IFormFile? ImageFile { get; set; }
         public string ImageUrl { get; set; } = "https://placehold.co/600x400/000000/FFF";
         public Category? Category { get; set; } //1-to-1 => A product belongs to a category
         public ICollection<OrderItem>? OrderItems { get; set; } // 1-to-Many a product can be in many order items

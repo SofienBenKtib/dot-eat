@@ -283,7 +283,7 @@ namespace doteat.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IngredientId"));
 
-                    b.Property<string>("IngredientName")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IngredientId");
@@ -294,37 +294,37 @@ namespace doteat.Data.Migrations
                         new
                         {
                             IngredientId = 1,
-                            IngredientName = "Beef"
+                            Name = "Beef"
                         },
                         new
                         {
                             IngredientId = 2,
-                            IngredientName = "Chicken"
+                            Name = "Chicken"
                         },
                         new
                         {
                             IngredientId = 3,
-                            IngredientName = "Fish"
+                            Name = "Fish"
                         },
                         new
                         {
                             IngredientId = 4,
-                            IngredientName = "Tortilla"
+                            Name = "Tortilla"
                         },
                         new
                         {
                             IngredientId = 5,
-                            IngredientName = "Lettuce"
+                            Name = "Lettuce"
                         },
                         new
                         {
                             IngredientId = 6,
-                            IngredientName = "Mushroom"
+                            Name = "Mushroom"
                         },
                         new
                         {
                             IngredientId = 7,
-                            IngredientName = "Tomato"
+                            Name = "Tomato"
                         });
                 });
 
@@ -395,6 +395,10 @@ namespace doteat.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -416,6 +420,7 @@ namespace doteat.Data.Migrations
                             ProductId = 1,
                             CategoryId = 2,
                             Description = "A delicious one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2.5m,
                             ProductName = "Beef Taco",
                             Stock = 120
@@ -425,6 +430,7 @@ namespace doteat.Data.Migrations
                             ProductId = 2,
                             CategoryId = 2,
                             Description = "A smooth one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2m,
                             ProductName = "Chicken Taco",
                             Stock = 150
@@ -434,6 +440,7 @@ namespace doteat.Data.Migrations
                             ProductId = 3,
                             CategoryId = 2,
                             Description = "A yummy one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2.2m,
                             ProductName = "Fish Taco",
                             Stock = 100

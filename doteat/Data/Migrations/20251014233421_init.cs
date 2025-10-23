@@ -14,49 +14,49 @@ namespace doteat.Data.Migrations
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 1,
-                column: "IngredientName",
+                column: "Name",
                 value: "Beef");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 2,
-                column: "IngredientName",
+                column: "Name",
                 value: "Chicken");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 3,
-                column: "IngredientName",
+                column: "Name",
                 value: "Fish");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 4,
-                column: "IngredientName",
+                column: "Name",
                 value: "Tortilla");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 5,
-                column: "IngredientName",
+                column: "Name",
                 value: "Lettuce");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 6,
-                column: "IngredientName",
+                column: "Name",
                 value: "Mushroom");
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 7,
-                column: "IngredientName",
+                column: "Name",
                 value: "Tomato");
         }
 
@@ -67,49 +67,49 @@ namespace doteat.Data.Migrations
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 1,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 2,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 3,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 4,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 5,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 6,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Ingredient",
                 keyColumn: "IngredientId",
                 keyValue: 7,
-                column: "IngredientName",
+                column: "Name",
                 value: null);
         }
     }
