@@ -42,13 +42,13 @@ namespace doteat.Data
                 );
 
             modelBuilder.Entity<Ingredient>().HasData(
-              new Ingredient { IngredientId = 1, IngredientName = "Beef" },
-              new Ingredient { IngredientId = 2, IngredientName = "Chicken" },
-              new Ingredient { IngredientId = 3, IngredientName = "Fish" },
-              new Ingredient { IngredientId = 4, IngredientName = "Tortilla" },
-              new Ingredient { IngredientId = 5, IngredientName = "Lettuce" },
-              new Ingredient { IngredientId = 6, IngredientName = "Mushroom" },
-              new Ingredient { IngredientId = 7, IngredientName = "Tomato" }
+              new Ingredient { IngredientId = 1, Name = "Beef" },
+              new Ingredient { IngredientId = 2, Name = "Chicken" },
+              new Ingredient { IngredientId = 3, Name = "Fish" },
+              new Ingredient { IngredientId = 4, Name = "Tortilla" },
+              new Ingredient { IngredientId = 5, Name = "Lettuce" },
+              new Ingredient { IngredientId = 6, Name = "Mushroom" },
+              new Ingredient { IngredientId = 7, Name = "Tomato" }
               );
 
             modelBuilder.Entity<Product>().HasData(

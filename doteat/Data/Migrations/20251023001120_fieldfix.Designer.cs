@@ -12,8 +12,8 @@ using doteat.Data;
 namespace doteat.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251014233421_init")]
-    partial class init
+    [Migration("20251023001120_fieldfix")]
+    partial class fieldfix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -398,6 +398,10 @@ namespace doteat.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -419,6 +423,7 @@ namespace doteat.Data.Migrations
                             ProductId = 1,
                             CategoryId = 2,
                             Description = "A delicious one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2.5m,
                             ProductName = "Beef Taco",
                             Stock = 120
@@ -428,6 +433,7 @@ namespace doteat.Data.Migrations
                             ProductId = 2,
                             CategoryId = 2,
                             Description = "A smooth one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2m,
                             ProductName = "Chicken Taco",
                             Stock = 150
@@ -437,6 +443,7 @@ namespace doteat.Data.Migrations
                             ProductId = 3,
                             CategoryId = 2,
                             Description = "A yummy one",
+                            ImageUrl = "https://placehold.co/600x400/000000/FFF",
                             Price = 2.2m,
                             ProductName = "Fish Taco",
                             Stock = 100
