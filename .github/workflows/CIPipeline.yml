@@ -1,0 +1,21 @@
+name: CI Pipeline                    # Workflow name
+on:                                  # Trigger events
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:                 # Manual trigger
+
+jobs:
+  build:                             # Job name
+    runs-on: ubuntu-latest           # Runner environment
+    steps:
+      - uses: actions/checkout@v4    # Action (checkout code)
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build                  # Custom step name
+        run: dotnet build             # Shell command
+      - name: Test
+        run: dotnet test
